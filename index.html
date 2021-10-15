@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03</title>
+</head>
+<body>
+    <div>
+        <label>Nome Completo:</label>
+        <input type="text" id="nome">
+    </div>
+
+    <br>
+    <div>
+        <label>Endereço:</label>
+        <input type="text" id='endereco'>
+    </div>
+
+    <br>
+    <div>
+        <label>Bairro:</label>
+        <input type="text" id='bairro'>
+    </div>
+
+    <br>
+    <div>
+        <label>Cidade:</label>
+        <input type="text" id='cidade'>
+    </div>
+    
+    <br>
+    <div>
+        <labe>Estado:</labe>
+        <input type="text" id='estado'>
+    </div>
+
+    <br>
+    <div>
+        <label>CEP:</label>
+        <input type="text" id='CEP'>
+    </div>
+
+    <br>
+    <div>
+        <label>Telefone:</label>
+        <input type="text" id='telefone' >    
+    </div>
+
+    <br>
+    <div>
+       <input type="button" value="salvar" onclick="salvar()">
+    </div>
+
+    <div>
+        <h1 id='nomeImpresso'></h1>
+        <h1 id='enderecoImpresso'></h1>
+        <h1 id='bairroImpresso'></h1>
+        <h1 id='cidadeImpresso'></h1>
+        <h1 id='estadoImpresso'></h1>
+        <h1 id='CEPImpresso'></h1>
+        <h1 id='telefoneImpresso'></h1>
+    </div>
+</body>
+</html>
+
+<script>
+    function salvar() {
+        var nome=document.getElementById('nome');
+        var nomeImpresso=document.getElementById('nomeImpresso');
+        var enderecoImpresso=document.getElementById('enderecoImpresso');
+        var bairroImpresso=document.getElementById('bairroImpresso');
+        var cidadeImpresso=document.getElementById('cidadeImpresso');
+        var estadoImpresso=document.getElementById('estadoImpresso');
+        var CEPImpresso=document.getElementById('CEPImpresso');
+        var telefoneImpresso=document.getElementById('telefoneImpresso');
+
+        alert(nome.value);
+        nomeImpresso.innerHTML=nome.value;
+
+        enderecoImpresso.innerHTML=endereco.value;
+        bairroImpresso.innerHTML=bairro.value;
+        cidadeImpresso.innerHTML=cidade.value;
+        estadoImpresso.innerHTML=estado.value;
+        CEPImpresso.innerHTML=CEP.value;
+        telefoneImpresso.innerHTML=telefone.value;
+}
+</script>
